@@ -24,9 +24,9 @@ app.post('/booklog', (req, res) => {
 app.get('/booklog', (req, res) => {
   res.json({
     "ok": true,
-    "booklog": {
-      1: booklog
-    }
+    "booklog": [
+      booklog
+    ]
   })
 })
 
